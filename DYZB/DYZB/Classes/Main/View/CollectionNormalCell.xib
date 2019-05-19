@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="253" height="182"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="JUk-4M-chL">
+                        <rect key="frame" x="0.0" y="158" width="14" height="14"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ライブのタイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5J-0m-prr">
+                        <rect key="frame" x="20" y="158" width="90" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="CHC-Za-2Cv">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="153"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ライブのタイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Max-zy-oB9">
+                        <rect key="frame" x="5" y="134" width="90" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.97569253710000003" green="1" blue="0.98743701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0U-9Q-ZOx">
+                        <rect key="frame" x="154" y="132" width="94" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666オンライン" image="Image_online"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JUk-4M-chL" secondAttribute="bottom" constant="10" id="80j-NK-QF7"/>
+                <constraint firstItem="d0U-9Q-ZOx" firstAttribute="trailing" secondItem="CHC-Za-2Cv" secondAttribute="trailing" constant="-5" id="8tH-ad-cIz"/>
+                <constraint firstItem="Max-zy-oB9" firstAttribute="bottom" secondItem="CHC-Za-2Cv" secondAttribute="bottom" constant="-5" id="A4L-3i-dcz"/>
+                <constraint firstItem="d0U-9Q-ZOx" firstAttribute="centerY" secondItem="Max-zy-oB9" secondAttribute="centerY" id="KCU-ug-wGj"/>
+                <constraint firstItem="K5J-0m-prr" firstAttribute="centerY" secondItem="JUk-4M-chL" secondAttribute="centerY" id="Ld2-OW-I9X"/>
+                <constraint firstAttribute="trailing" secondItem="CHC-Za-2Cv" secondAttribute="trailing" id="Z4i-ql-TaE"/>
+                <constraint firstItem="K5J-0m-prr" firstAttribute="leading" secondItem="JUk-4M-chL" secondAttribute="trailing" constant="5" id="afm-nC-gyG"/>
+                <constraint firstItem="CHC-Za-2Cv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cbk-zo-gRW"/>
+                <constraint firstItem="CHC-Za-2Cv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="euX-Fe-XK9"/>
+                <constraint firstItem="K5J-0m-prr" firstAttribute="leading" secondItem="JUk-4M-chL" secondAttribute="trailing" constant="5" id="hih-U0-HUL"/>
+                <constraint firstItem="JUk-4M-chL" firstAttribute="top" secondItem="CHC-Za-2Cv" secondAttribute="bottom" constant="5" id="nce-oD-WkC"/>
+                <constraint firstItem="d0U-9Q-ZOx" firstAttribute="bottom" secondItem="CHC-Za-2Cv" secondAttribute="bottom" constant="-5" id="paK-bS-TGN"/>
+                <constraint firstItem="Max-zy-oB9" firstAttribute="leading" secondItem="CHC-Za-2Cv" secondAttribute="leading" constant="5" id="spn-XM-1Ia"/>
+            </constraints>
+            <size key="customSize" width="253" height="182"/>
+            <point key="canvasLocation" x="104.8" y="109.74512743628186"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+    </resources>
+</document>
